@@ -1,0 +1,73 @@
+# =========================
+# Node / Express (Backend)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+
+# Build output
+dist/
+build/
+
+# =========================
+# React (Frontend)
+# =========================
+client/node_modules/
+client/build/
+client/.env
+
+# Optional: if React is at root instead of /client
+build/
+node_modules/
+
+# =========================
+# MongoDB
+# =========================
+data/
+*.db
+*.sqlite
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Misc
+# =========================
+.cache/
+.parcel-cache/
+.next/
+out/
+.tmp/
