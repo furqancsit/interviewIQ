@@ -1,6 +1,20 @@
 import mongoose, { model, Schema } from "mongoose";
 
 
+const questionsScehma = new Schema({
+    question: String,
+    difficulty: String,
+    timeLimit: Number,
+    answer: String,
+    feedback: String,
+    score: { type: Number, default: 0 },
+    confidence: { type: Number, default: 0 },
+    communication: { type: Number, default: 0 },
+    correctness: { type: Number, default: 0 },
+
+})
+
+
 const interviewSchema = new Schema({
 
 
@@ -12,17 +26,17 @@ const interviewSchema = new Schema({
     },
     role: {
         type: String,
-        required : true
+        required: true
     },
     experience: {
         type: String,
-        required : true
+        required: true
 
     },
 
     mode: {
         type: String,
-        required : true,
+        required: true,
         enum: ["Hr", "Technical"],
     },
     questions: [questionsScehma],
